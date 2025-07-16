@@ -21,8 +21,8 @@ This is my Software Development ePortfolio site. Here you will find the projects
   </div>
   <div class="terminal-window">
     <code>
-# Click to open the Project Artifacts section
-path = r"https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/artifacts.md"
+# Click to open the Code Review section
+path = r"https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/code-review.md"
 file = open(path)
 print(file.read())
     </code>
