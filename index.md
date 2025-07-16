@@ -9,23 +9,25 @@ This is my Software Development ePortfolio site. Here you will find the projects
 ---
 
 <div class="terminal-container">
-  <div class="terminal-titlebar">
-    <div class="terminal-title">
-      <a class="terminal-link" href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/code-review.md">Code Review</a>
-    </div>
+  <div class="terminal-header">
+    <span class="terminal-title">Code Review</span>
     <div class="terminal-buttons">
-      <div class="terminal-btn">_</div>
-      <div class="terminal-btn">▢</div>
-      <div class="terminal-btn">×</div>
+      <div class="button">_</div>
+      <div class="button">&#9633;</div>
+      <div class="button">X</div>
     </div>
   </div>
-  <div class="terminal-window">
-    <code>
-# Click to open the Project Artifacts section
-path = r"https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/artifacts.md"
-file = open(path)
-print(file.read())
-    </code>
+  <div class="window-terminal">
+<pre><code>apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
+Python 3.11.4 (tags/v3.11.4)
+>>> path = r"Software-Dev-ePortfolio/code-review.txt"
+>>> file = open(path, "r")
+>>> print(file.read())
+
+📄 Opening file: code-review.txt ...
+<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/code-review.md" target="_blank">Click here to open Code Review</a><span class="cursor"></span>
+</code></pre>
   </div>
 </div>
 
