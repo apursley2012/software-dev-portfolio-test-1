@@ -178,81 +178,62 @@ p {
     text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
 }
 
-
+/* Retro terminal container styling */
 .terminal-container {
-  background-color: #d4d0c8; /* Classic Windows grey */
-  border: 2px solid #000;
-  box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #ffffff;
-  max-width: 900px;
-  margin: 2rem auto;
+  background-color: #c0c0c0; /* Retro Windows gray */
+  border: 2px solid #808080;
+  box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #000000;
   padding: 0;
+  margin: 2rem auto;
+  max-width: 900px;
   font-family: 'Share Tech Mono', monospace;
 }
 
-.terminal-header {
-  background-color: #c0c0c0;
-  color: #000;
+/* Retro title bar */
+.terminal-titlebar {
+  background-color: #000080; /* Classic blue */
+  color: #ffffff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.9rem;
-  border-bottom: 2px solid #808080;
-}
-
-.terminal-title {
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.85rem;
   font-weight: bold;
+  text-shadow: 1px 1px #000;
 }
 
+/* Title text left-aligned */
+.terminal-title {
+  flex: 1;
+  text-align: left;
+}
+
+/* Retro buttons (right corner) */
 .terminal-buttons {
   display: flex;
   gap: 4px;
 }
 
-.terminal-buttons .button {
-  background: #d4d0c8;
-  border: 2px solid #808080;
+.terminal-btn {
   width: 18px;
   height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #c0c0c0;
+  border: 2px outset #ffffff;
+  color: #000;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 14px;
   font-weight: bold;
-  box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #404040;
+  font-family: monospace;
 }
 
-.window-terminal {
-  background-color: #0a0a0a;
-  color: #ccff00;
-  font-family: 'Share Tech Mono', monospace;
-  padding: 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  white-space: pre-wrap;
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-}
-
-.window-terminal a {
-  color: #00ffff;
+/* Link styling for page titles inside terminal window */
+.terminal-title a.terminal-link {
+  color: #ffffff;
   text-decoration: none;
 }
 
-.window-terminal a:hover {
+.terminal-title a.terminal-link:hover {
   text-decoration: underline;
-}
-
-.cursor {
-  display: inline-block;
-  width: 8px;
-  height: 1em;
-  background-color: #ccff00;
-  animation: blink 1s steps(2, start) infinite;
-  margin-left: 3px;
-}
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
+  cursor: pointer;
 }
