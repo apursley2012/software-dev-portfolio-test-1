@@ -16,42 +16,24 @@ main {
 }
 
 h1, h2, h3 {
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
+  color: #ccff00;
+  font-family: '256 Bytes', monospace;
+  text-align: center;
+  /* Enhanced glow for headers */
+  text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
+  margin-bottom: 1.5rem;
 }
 
 h1 {
     font-size: 3.5rem;
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
 }
 
 h3 {
     font-size: 1.8rem;
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
 }
 
 p {
@@ -82,17 +64,6 @@ p {
 .terminal-window:hover {
     box-shadow: 0 0 25px rgba(0, 255, 136, 0.8); /* Enhanced glow on hover */
     transform: translateY(-3px); /* Slight lift on hover */
-}
-.terminal-header {
-  background-color: #1c1c1c;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Share Tech Mono', monospace;
-  color: #00ff00;
-  font-size: 0.9rem;
-  border-bottom: 1px solid #444;
 }
 
 .terminal-window code {
@@ -176,64 +147,4 @@ p {
     padding: 0.2em 0.4em;
     border-radius: 3px;
     text-shadow: 0 0 5px #ccff00; /* Glow for inline code */
-}
-
-/* Retro terminal container styling */
-.terminal-container {
-  background-color: #c0c0c0; /* Retro Windows gray */
-  border: 2px solid #808080;
-  box-shadow: inset -1px -1px 0 #ffffff, inset 1px 1px 0 #000000;
-  padding: 0;
-  margin: 2rem auto;
-  max-width: 900px;
-  font-family: 'Share Tech Mono', monospace;
-}
-
-/* Retro title bar */
-.terminal-titlebar {
-  background-color: #000080; /* Classic blue */
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.85rem;
-  font-weight: bold;
-  text-shadow: 1px 1px #000;
-}
-
-/* Title text left-aligned */
-.terminal-title {
-  flex: 1;
-  text-align: left;
-}
-
-/* Retro buttons (right corner) */
-.terminal-buttons {
-  display: flex;
-  gap: 4px;
-}
-
-.terminal-btn {
-  width: 18px;
-  height: 18px;
-  background-color: #c0c0c0;
-  border: 2px outset #ffffff;
-  color: #000;
-  font-size: 0.75rem;
-  text-align: center;
-  line-height: 14px;
-  font-weight: bold;
-  font-family: monospace;
-}
-
-/* Link styling for page titles inside terminal window */
-.terminal-title a.terminal-link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.terminal-title a.terminal-link:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
